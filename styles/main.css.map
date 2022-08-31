@@ -5,7 +5,7 @@
         "main.scss",
         "_layout.scss",
         "_program.scss",
-        "base.scss"
+        "_base.scss"
     ],
     "names": [],
     "file": "main.css"
