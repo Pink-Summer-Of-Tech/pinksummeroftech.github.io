@@ -11,47 +11,92 @@
     <!-- Hero Section Starts -->
     <header>
       <!-- Nav section -->
-
-      <p>Logo</p>
-      <p>Register Now</p>
+      <nav class="navcontainer">
+        <div>
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+        <div>
+          <button class="registerBtn">Register Now!</button>
+        </div>
+      </nav>
       <!-- Nav Section ends -->
-      <div>
-        <p>WELCOME TO PINK SUMMER OF TECH</p>
-        <h1>Let's kick start your TECH career</h1>
-      </div>
-      <div>
-        <!-- Image section -->
-      </div>
+      <!-- Welcome section -->
+      <section>
+        <div class="welcomeContainer">
+          <p>WELCOME TO PINK SUMMER OF TECH</p>
+          <h1>
+            Let's kick start <br />
+            your TECH career
+          </h1>
+        </div>
+        <!-- <div class="bannerContainer">
+          <div>
+            <img src="./images/girl1.svg" alt="girl1" />
+          </div>
+          <div>
+            <img src="./images/girl2.svg" alt="girl2" />
+          </div>
+          <div>
+            <img src="./images/girl3.svg" alt="girl3" />
+          </div>
+          <div>
+            <img src="./images/girl4.svg" alt="girl4" />
+          </div>
+          <div>
+            <img src="./images/girl5.svg" alt="girl5" />
+          </div>
+        </div> -->
+      </section>
+      <!-- Welcome section ends -->
     </header>
     <!-- Hero Section ends -->
 
     <!-- Partners Start -->
     <section>
-      <h3>TRUSTED AND PARTNERED WITH SOME AWESOME COMPANIES</h3>
-      <!-- Banner section -->
+      <div class="partners">
+        <h3>TRUSTED AND PARTNERED WITH SOME AWESOME COMPANIES</h3>
+      </div>
+
+      <ul class="partnerslist">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </section>
     <!-- Partners End -->
 
     <!-- Why you should join starts -->
     <section>
-      <h3>WHY YOU SHOULD JOIN PINK SUMMER OF TECH</h3>
-      <p>
-        We are a team dedicated to fostering diversity in the tech ecosystem. We
-        are bringing you absolute greatness in learning.
-      </p>
-
       <div>
+        <h3 class="sub-title mb-0">
+          WHY YOU SHOULD JOIN
+          <span class="text-pink">
+            PINK <br />
+            SUMMER OF TECH
+          </span>
+        </h3>
+        <p class="explainer">
+          We are a team dedicated to fostering diversity in the tech ecosystem.
+          We
+          <br />
+          are bringing you absolute greatness in learning.
+        </p>
+      </div>
+      <div class="joinpoints">
         <div>
-          <p>Premium Quality Guidance</p>
-          <p>
+          <p class="point-title">Premium Quality Guidance</p>
+          <p class="point-description">
             The beginning stages of your career can be quite confusing as
             there's so much to do in the tech space. Our goal is to make sure
             you're well informed about whatever role you decide to go with.
           </p>
         </div>
         <div>
-          <p>Premium Quality Guidance</p>
-          <p>
+          <p class="point-title">Access To Curated Resources</p>
+          <p class="point-description">
             You've picked a career. That's step one done. Now, there's a lot of
             resources on the internet. That's both a blessing and a curse. We
             help you avoid this by providing vetoed and properly mapped out
@@ -59,16 +104,16 @@
           </p>
         </div>
         <div>
-          <p>Community</p>
-          <p>
+          <p class="point-title">Community</p>
+          <p class="point-description">
             Because what's better than having fellow women you can easily talk
             to, get help from, and be motivated by? A sisterhood of sorts. Oh
             yes!
           </p>
         </div>
         <div>
-          <p>Talent Pipeline</p>
-          <p>
+          <p class="point-title">Talent Pipeline</p>
+          <p class="point-description">
             You've learnt and cofident with your skill level and expertise,
             what's next? Getting your first role in tech can be a hassle. We
             make it easier.
@@ -79,57 +124,110 @@
     <!-- Why you should join ends -->
 
     <!-- Expectation starts -->
-    <section>
-      <h3>Experience what an actual work environment is like</h3>
-      <div>
-        <p>Virtual</p>
-        <p>
-          Online sessions with your tutor, and active participation with/in the
-          community.
-        </p>
+    <section class="pos-relative mb-10">
+      <h3 class="sub-title">
+        Experience what an <br />
+        actual work <br />
+        environment is like
+      </h3>
+      <div class="experience-card-container">
+        <div class="experience-card">
+          <div class="header-virtual"></div>
+          <div class="body">
+            <p class="type">Virtual</p>
+            <p class="description">
+              Online sessions with your tutor, and <br />
+              active participation with/in <br />
+              the community.
+            </p>
+            <div class="icon-container">
+              <img src="./images/virtual.svg" alt="virtual" />
+            </div>
+          </div>
+        </div>
+        <div class="experience-card">
+          <div class="header"></div>
+          <div class="body">
+            <p class="type">In-person</p>
+            <p class="description">
+              Live sessions with tutors and other <br />students.
+            </p>
+            <div class="icon-container">
+              <img src="./images/personal.svg" alt="virtual" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <p>In-person</p>
-        <p>Live sessions with tutors and other students.</p>
+      <div class="info-container">
+        <img src="./images/lightbulb.svg" alt="light-bulb" />
+        <p>
+          You will have access to virtual classes of
+          <b>
+            5 days a <br />
+            week
+          </b>
+          for <b>5 hours </b> daily, and on saturdays you have <br />
+          access to our <b> in-person </b>classes.
+        </p>
       </div>
     </section>
     <!-- Expectation ends -->
 
     <!-- Growth Path -->
     <section>
-      <h3>WE HELP YOU GROW YOUR CAREER</h3>
-      <div>
-        <p>50 <span> Students</span></p>
+      <h3 class="sub-title">
+        WE HELP YOU GROW YOUR <br />
+        CAREER
+      </h3>
+      <div class="career-section">
+        <div class="hover-card">
+          <h5>50 <span> Students</span></h5>
+        </div>
+        <div class="hover-card">
+          <h5>24 <span> Courses</span></h5>
+        </div>
+        <div class="hover-card">
+          <h5>8 <span> Programs</span></h5>
+        </div>
       </div>
-      <div>
-        <p>24 <span> Courses</span></p>
+      <!-- Program starts -->
+      <h3 class="sub-title">
+        With the best PROGRAMS <br />
+        WE OFFER
+      </h3>
+      <div class="program-options">
+        <div>
+          <p class="point-title">
+            Product <br />
+            Management
+          </p>
+          <p class="point-description">4 weeks</p>
+        </div>
+        <div>
+          <p class="point-title">
+            Web <br />
+            Development
+          </p>
+          <p class="point-description">4 weeks</p>
+        </div>
+        <div>
+          <p class="point-title">
+            Product <br />
+            Design
+          </p>
+          <p class="point-description">4 weeks</p>
+        </div>
+        <div>
+          <p class="point-title">
+            Technical <br />
+            Writing
+          </p>
+          <p class="point-description">4 weeks</p>
+        </div>
       </div>
-      <div>
-        <p>8 <span> Programs</span></p>
-      </div>
+
+      <!-- Program ends  -->
     </section>
     <!-- Growth path ends -->
-
-    <!-- Program starts -->
-    <section>
-      <h3 class="title">With the best PROGRAMS WE OFFER</h3>
-      <div>
-        Product Management
-        <p>4 weeks</p>
-      </div>
-      <div>
-        Web Development
-        <p>4 weeks</p>
-      </div>
-      <div>
-        Product Design
-        <p>4 weeks</p>
-      </div>
-      <div>
-        Technical Writing
-        <p>4 weeks</p>
-      </div>
-    </section>
-    <!-- Program ends  -->
   </body>
 </html>

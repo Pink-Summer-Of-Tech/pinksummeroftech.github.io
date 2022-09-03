@@ -1,0 +1,96 @@
+@import "base";
+
+
+.welcomeContainer{
+    padding: 20px;
+    @media(min-width: $breakpoint-tablet){
+        padding: 150px;
+        padding-top: 0px;
+        
+       
+    }
+
+    p{
+        color: $pink;
+        font-family: 'Galano Grotesque Bold', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 0px;
+        
+        @media(min-width: $breakpoint-tablet){
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            padding-bottom: 20px;
+        }
+    }
+    h1{
+        font-size: 30px;
+        font-family: 'Galano Grotesque Bold', sans-serif;
+        margin-top: 10px;
+        
+        
+        @media(min-width: $breakpoint-tablet){
+            font-size: 68px;
+            line-height: 72px;
+            letter-spacing: 0.04em;
+            line-height: 52px;
+        }
+    }
+
+}
+
+.bannerContainer{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    //gap: 10px;
+
+    div{
+        width: 20%;
+        height: 200px;
+    }
+        img{
+            float: left;
+            width:  100%;
+            height: auto;
+            object-fit: cover;
+        }
+}
+.partners{
+    text-align: center;
+    font-family: 'Galano Grotesque SemiBold', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: $black;
+    line-height: 33px;
+    
+    @media(min-width: $breakpoint-tablet){
+        font-size: 26px;
+       
+    }
+
+}
+.partnerslist{
+    padding: 20px;
+    display: flex;
+    list-style:none;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media(min-width: $breakpoint-tablet){
+        padding: 50px;
+        padding-top: 0px;
+       
+    }
+    li{
+
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: -12.1766px 24px 44.9014px rgba(81, 78, 120, 0.18), inset 1.31294px 1.96941px 0px rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(16.058px);
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        margin:20px;
+    }
+
+}

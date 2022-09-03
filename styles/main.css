@@ -1,14 +1,637 @@
-.title {
-  text-align: center;
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Galano Grotesque';
+  src: url("../fonts/galano-grotesque-alt-cufonfonts/GalanoGrotesqueRegular.otf");
+}
+
+@font-face {
+  font-family: 'Galano Grotesque Bold';
+  src: url("../fonts/galano-grotesque-alt-cufonfonts/GalanoGrotesqueBold.otf");
+}
+
+@font-face {
+  font-family: 'Galano Grotesque SemiBold';
+  src: url("../fonts/galano-grotesque-alt-cufonfonts/GalanoGrotesqueSemiBold.otf");
+}
+
+@font-face {
+  font-family: 'Benton Sans';
+  src: url("../fonts/Benton Sans/All Fonts/bentonsansregular/BentonSans Regular.otf");
+}
+
+.text-pink {
+  color: #D452C7;
 }
 
 h1 {
   text-transform: uppercase;
   color: #05092A;
+  font-family: 'Galano Grotesque', sans-serif;
 }
 
 h3 {
   text-transform: uppercase;
   color: #05092A;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  section {
+    margin-bottom: 150px;
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-10 {
+  margin-bottom: 10rem;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.navcontainer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: radial-gradient(120.6% 120.6% at 7.8% 4.25%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+  box-shadow: inset -5px -5px 4px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(40px);
+}
+
+@media (min-width: 768px) {
+  .navcontainer {
+    padding: 150px;
+    padding-top: 50px;
+  }
+}
+
+.navcontainer .registerBtn {
+  background: #D452C7;
+  box-shadow: 0px 12px 24px rgba(212, 82, 199, 0.24);
+  font-family: 'Galano Grotesque Bold', sans-serif;
+  border-radius: 12px;
+  color: #FFFFFF;
+  padding: 8px 0px;
+  width: 130px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .navcontainer .registerBtn {
+    width: 190px;
+    height: 56px;
+    font-size: 18px;
+    padding: 16px 0px;
+  }
+}
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Galano Grotesque';
+  src: url("../fonts/galano-grotesque-alt-cufonfonts/GalanoGrotesqueRegular.otf");
+}
+
+@font-face {
+  font-family: 'Galano Grotesque Bold';
+  src: url("../fonts/galano-grotesque-alt-cufonfonts/GalanoGrotesqueBold.otf");
+}
+
+@font-face {
+  font-family: 'Galano Grotesque SemiBold';
+  src: url("../fonts/galano-grotesque-alt-cufonfonts/GalanoGrotesqueSemiBold.otf");
+}
+
+@font-face {
+  font-family: 'Benton Sans';
+  src: url("../fonts/Benton Sans/All Fonts/bentonsansregular/BentonSans Regular.otf");
+}
+
+.text-pink {
+  color: #D452C7;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #05092A;
+  font-family: 'Galano Grotesque', sans-serif;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #05092A;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  section {
+    margin-bottom: 150px;
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-10 {
+  margin-bottom: 10rem;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.explainer {
+  color: #1D3257;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Benton Sans", sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 768px) {
+  .explainer {
+    font-size: 16px;
+  }
+}
+
+.sub-title {
+  text-align: center;
+  font-family: 'Galano Grotesque Bold', sans-serif;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .sub-title {
+    font-size: 52px;
+    line-height: 64px;
+  }
+}
+
+.career-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.hover-card {
+  border: 1px solid #BCCBD3;
+  box-shadow: 12px 20px 64px rgba(0, 0, 0, 0.16);
+  border-radius: 16px;
+  padding: 28px 46px;
+}
+
+.hover-card h5 {
+  margin: 0px;
+  font-size: 46px;
+  line-height: 33px;
+  color: #D452C7;
+  font-family: "Benton Sans", sans-serif;
+  font-weight: 700;
+}
+
+.hover-card span {
+  font-size: 20px;
+  color: #05092A;
+  font-family: 'Galano Grotesque Bold', sans-serif;
+}
+
+.experience-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+}
+
+.experience-card {
+  background: #FFFFFF;
+  border: 1px solid #BCCBD3;
+  border-radius: 12px 12px 12px 12px;
+  width: 80%;
+  position: relative;
+  z-index: 1000;
+}
+
+@media (min-width: 768px) {
+  .experience-card {
+    width: 25%;
+  }
+}
+
+.experience-card .header {
+  background: #D452C7;
+  border-radius: 12px 12px 0px 0px;
+  height: 60px;
+  margin: 0px;
+}
+
+.experience-card .header-virtual {
+  background: #6E5CFA;
+  border-radius: 12px 12px 0px 0px;
+  height: 60px;
+}
+
+.experience-card .body {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.experience-card .type {
+  font-size: 20px;
+  color: #05092A;
+  font-family: 'Galano Grotesque Bold', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  margin-bottom: 0px;
+}
+
+.experience-card .description {
+  color: #1D3257;
+  font-weight: 350;
+  font-size: 16px;
+  font-family: "Benton Sans", sans-serif;
+  font-weight: 350;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+.experience-card .icon-container {
+  height: 70px;
+  width: 70px;
+  background: #FFFFFF;
+  border: 1px solid #BCCBD3;
+  /* Shadow 1 */
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  box-shadow: 12px 20px 64px rgba(0, 0, 0, 0.16);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-container {
+  display: flex;
+  gap: 20px;
+  border: 1px solid #BCCBD3;
+  border-radius: 12px 12px 12px 12px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .info-container {
+    width: 30%;
+  }
+}
+
+.info-container p {
+  margin: 0;
+  font-family: "Benton Sans", sans-serif;
+  font-weight: 350;
+  color: #1D3257;
+}
+
+.info-container b {
+  color: #05092A;
+}
+
+.joinpoints {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .joinpoints {
+    padding: 50px;
+  }
+}
+
+.joinpoints div {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .joinpoints div {
+    width: 50%;
+  }
+}
+
+.point-title {
+  font-size: 26px;
+  font-family: 'Galano Grotesque Bold', sans-serif;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .point-title {
+    padding: 0px 100px;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.point-description {
+  font-size: 16px;
+  font-family: "Benton Sans", sans-serif;
+  font-weight: 350;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #1D3257;
+}
+
+@media (min-width: 768px) {
+  .point-description {
+    padding: 0px 100px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.program-options {
+  display: flex;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.program-options div {
+  background: #FFFFFF;
+  border: 1px solid #9CACB7;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Galano Grotesque';
+  src: url("../fonts/galano-grotesque-alt-cufonfonts/GalanoGrotesqueRegular.otf");
+}
+
+@font-face {
+  font-family: 'Galano Grotesque Bold';
+  src: url("../fonts/galano-grotesque-alt-cufonfonts/GalanoGrotesqueBold.otf");
+}
+
+@font-face {
+  font-family: 'Galano Grotesque SemiBold';
+  src: url("../fonts/galano-grotesque-alt-cufonfonts/GalanoGrotesqueSemiBold.otf");
+}
+
+@font-face {
+  font-family: 'Benton Sans';
+  src: url("../fonts/Benton Sans/All Fonts/bentonsansregular/BentonSans Regular.otf");
+}
+
+.text-pink {
+  color: #D452C7;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #05092A;
+  font-family: 'Galano Grotesque', sans-serif;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #05092A;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  section {
+    margin-bottom: 150px;
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-10 {
+  margin-bottom: 10rem;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Galano Grotesque';
+  src: url("../fonts/galano-grotesque-alt-cufonfonts/GalanoGrotesqueRegular.otf");
+}
+
+@font-face {
+  font-family: 'Galano Grotesque Bold';
+  src: url("../fonts/galano-grotesque-alt-cufonfonts/GalanoGrotesqueBold.otf");
+}
+
+@font-face {
+  font-family: 'Galano Grotesque SemiBold';
+  src: url("../fonts/galano-grotesque-alt-cufonfonts/GalanoGrotesqueSemiBold.otf");
+}
+
+@font-face {
+  font-family: 'Benton Sans';
+  src: url("../fonts/Benton Sans/All Fonts/bentonsansregular/BentonSans Regular.otf");
+}
+
+.text-pink {
+  color: #D452C7;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #05092A;
+  font-family: 'Galano Grotesque', sans-serif;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #05092A;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  section {
+    margin-bottom: 150px;
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-10 {
+  margin-bottom: 10rem;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.welcomeContainer {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .welcomeContainer {
+    padding: 150px;
+    padding-top: 0px;
+  }
+}
+
+.welcomeContainer p {
+  color: #D452C7;
+  font-family: 'Galano Grotesque Bold', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+  .welcomeContainer p {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    padding-bottom: 20px;
+  }
+}
+
+.welcomeContainer h1 {
+  font-size: 30px;
+  font-family: 'Galano Grotesque Bold', sans-serif;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .welcomeContainer h1 {
+    font-size: 68px;
+    line-height: 72px;
+    letter-spacing: 0.04em;
+    line-height: 52px;
+  }
+}
+
+.bannerContainer {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.bannerContainer div {
+  width: 20%;
+  height: 200px;
+}
+
+.bannerContainer img {
+  float: left;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.partners {
+  text-align: center;
+  font-family: 'Galano Grotesque SemiBold', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #05092A;
+  line-height: 33px;
+}
+
+@media (min-width: 768px) {
+  .partners {
+    font-size: 26px;
+  }
+}
+
+.partnerslist {
+  padding: 20px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .partnerslist {
+    padding: 50px;
+    padding-top: 0px;
+  }
+}
+
+.partnerslist li {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: -12.1766px 24px 44.9014px rgba(81, 78, 120, 0.18), inset 1.31294px 1.96941px 0px rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16.058px);
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin: 20px;
 }
 /*# sourceMappingURL=main.css.map */

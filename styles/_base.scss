@@ -1,3 +1,11 @@
+
+html,
+body,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
 // Colors
 $pink: #D452C7;
 $black: #05092A;
@@ -8,22 +16,68 @@ $white: #FFFFFF;
 //Borders
 $border-dark: 1px solid $light-grey; 
 
+
+//Breakpoints
+$breakpoint-tablet: 768px;
+
 //Font
-// @font-face {
-//     font-family: 'Galano Grotesque';
-//     src: url('../fonts/GalanoGrotesque/');
-//     font-weight: normal;
-//     font-style:  normal;
-// }
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/galano-grotesque-alt-cufonfonts/GalanoGrotesqueRegular.otf');
+}
+
+@font-face {
+    font-family: 'Galano Grotesque Bold';
+    src: url('../fonts/galano-grotesque-alt-cufonfonts/GalanoGrotesqueBold.otf');
+}
+
+@font-face {
+    font-family: 'Galano Grotesque SemiBold';
+    src: url('../fonts/galano-grotesque-alt-cufonfonts/GalanoGrotesqueSemiBold.otf');
+}
+
+@font-face {
+    font-family: 'Benton Sans';
+    src: url('../fonts/Benton\ Sans/All\ Fonts/bentonsansregular/BentonSans Regular.otf');
+}
+
+//Text
+.text-pink{
+    color: $pink;
+}
 
 
 
 h1{
     text-transform: uppercase;
-    color: $black
+    color: $black;
+    font-family: 'Galano Grotesque', sans-serif;
 }
 
 h3{
     text-transform: uppercase;
     color: $black;
 }
+
+section{
+    margin-bottom: 30px;
+
+    @media(min-width: $breakpoint-tablet){
+        margin-bottom: 150px;
+
+    }
+
+}
+
+.mb-0{
+    margin-bottom: 0px;
+}
+
+.mb-10{
+    margin-bottom: 10rem;
+}
+
+.pos-relative{
+    position: relative;
+}
+
