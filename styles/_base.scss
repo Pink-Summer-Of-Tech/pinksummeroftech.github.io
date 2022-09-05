@@ -41,6 +41,10 @@ $breakpoint-tablet: 768px;
     src: url('../fonts/Benton\ Sans/All\ Fonts/bentonsansregular/BentonSans Regular.otf');
 }
 
+@font-face {
+    font-family: 'Benton Sans Bold';
+    src: url('../fonts/Benton\ Sans/All\ Fonts/bentonsansbold/BentonSans Bold.otf');
+}
 //Text
 .text-pink{
     color: $pink;

@@ -26,6 +26,11 @@ ol {
   src: url("../fonts/Benton Sans/All Fonts/bentonsansregular/BentonSans Regular.otf");
 }
 
+@font-face {
+  font-family: 'Benton Sans Bold';
+  src: url("../fonts/Benton Sans/All Fonts/bentonsansbold/BentonSans Bold.otf");
+}
+
 .text-pink {
   color: #D452C7;
 }
@@ -132,6 +137,11 @@ ol {
 @font-face {
   font-family: 'Benton Sans';
   src: url("../fonts/Benton Sans/All Fonts/bentonsansregular/BentonSans Regular.otf");
+}
+
+@font-face {
+  font-family: 'Benton Sans Bold';
+  src: url("../fonts/Benton Sans/All Fonts/bentonsansbold/BentonSans Bold.otf");
 }
 
 .text-pink {
@@ -313,7 +323,7 @@ section {
   border-radius: 12px 12px 12px 12px;
   width: 80%;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 40px;
   position: relative;
   z-index: 1000;
   background-color: #FFFFFF;
@@ -341,6 +351,7 @@ section {
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -349,13 +360,14 @@ section {
   }
 }
 
-.joinpoints div {
+.joinpoints .reason {
   width: 100%;
+  display: flex;
 }
 
 @media (min-width: 768px) {
-  .joinpoints div {
-    width: 50%;
+  .joinpoints .reason {
+    width: 40%;
   }
 }
 
@@ -363,6 +375,9 @@ section {
   font-size: 26px;
   font-family: 'Galano Grotesque Bold', sans-serif;
   margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+
 }
 
 @media (min-width: 768px) {
@@ -397,11 +412,133 @@ section {
   gap: 20px;
 }
 
-.program-options div {
-  background: #FFFFFF;
+.program-options .dflex {
+  display: flex;
   border: 1px solid #9CACB7;
   border-radius: 16px;
-  padding: 10px;
+  align-items: center;
+}
+
+.bkg-girl {
+  position: absolute;
+  top: -97px;
+  right: 3%;
+}
+
+.join-section {
+  position: relative;
+}
+
+.bubble {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  animation: smoothmove 4s ease-in-out infinite;
+}
+
+.bubble .bubble_background {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: block;
+  background: radial-gradient(circle, #f7f7ff 11%, #fdf7ff 11%, #e5b9ff 67%, white 89%, black 89%);
+  border-radius: 100%;
+  animation: ciculate 5s ease-in-out infinite;
+  transition: all .3s ease-in-out;
+}
+
+.displace-55 {
+  left: -55px;
+}
+
+.displace-132{
+  left: 132px;
+}
+@keyframes ciculate {
+  0% {
+    transform: rotate(0deg);
+    height: 100%;
+  }
+  25% {
+    margin-top: -5%;
+    height: 110%;
+  }
+  50% {
+    margin-top: -5%;
+    height: 105%;
+  }
+  75% {
+    margin-top: -2%;
+    height: 110%;
+  }
+  100% {
+    transform: rotate(360deg);
+    height: 100%;
+  }
+}
+
+@keyframes smoothmove {
+  0% {
+    margin: 0;
+  }
+  25% {
+    margin-left: -10px;
+    margin-top: 2px;
+  }
+  50% {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  75% {
+    margin-left: 10px;
+    margin-top: 6px;
+  }
+  100% {
+    margin: 0;
+  }
+}
+
+.join-reasons {
+  position: relative;
+  margin-top: 50px;
+}
+
+.option {
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  position: absolute;
+  left: 38px;
+  top: 33px;
+  animation: smoothmove 4s ease-in-out infinite;
+}
+
+.option-mirror {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: -12.1766px 24px 44.9014px rgba(81, 78, 120, 0.18), inset 1.31294px 1.96941px 0px rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16.058px);
+  border-radius: 13.1294px;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  z-index: 1000;
+}
+
+.yellow {
+  background: #FFC229;
+}
+
+.orange {
+  background: #F75426;
+}
+
+.purple {
+  background: #6E5CFA;
+}
+
+.pink {
+  background: #D452C7;
 }
 
 html,
@@ -430,6 +567,11 @@ ol {
 @font-face {
   font-family: 'Benton Sans';
   src: url("../fonts/Benton Sans/All Fonts/bentonsansregular/BentonSans Regular.otf");
+}
+
+@font-face {
+  font-family: 'Benton Sans Bold';
+  src: url("../fonts/Benton Sans/All Fonts/bentonsansbold/BentonSans Bold.otf");
 }
 
 .text-pink {
@@ -495,6 +637,11 @@ ol {
 @font-face {
   font-family: 'Benton Sans';
   src: url("../fonts/Benton Sans/All Fonts/bentonsansregular/BentonSans Regular.otf");
+}
+
+@font-face {
+  font-family: 'Benton Sans Bold';
+  src: url("../fonts/Benton Sans/All Fonts/bentonsansbold/BentonSans Bold.otf");
 }
 
 .text-pink {
@@ -616,6 +763,7 @@ section {
   list-style: none;
   justify-content: center;
   flex-wrap: wrap;
+  border-bottom: 1px solid #DDDDDD;
 }
 
 @media (min-width: 768px) {
@@ -633,5 +781,11 @@ section {
   height: 80px;
   border-radius: 100%;
   margin: 20px;
+}
+
+@media (min-width: 768px) {
+  .partnerslist li {
+    margin: 60px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
