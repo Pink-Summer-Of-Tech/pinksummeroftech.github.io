@@ -494,8 +494,15 @@ section {
 }
 
 .join-reasons {
-  position: relative;
-  margin-top: 50px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .join-reasons {
+    position: relative;
+    margin-top: 50px;
+    display: block;
+  }
 }
 
 .option {
@@ -537,6 +544,24 @@ section {
 
 .displace-132 {
   left: 135px;
+}
+
+.expectation-bkg {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .expectation-bkg {
+    display: block;
+    position: absolute;
+    bottom: -112px;
+  }
+}
+
+.whybkg {
+  background-image: url(../images/bkg4.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 html,
@@ -727,13 +752,63 @@ section {
   display: flex;
   overflow: hidden;
   width: 100%;
+  z-index: 1000;
 }
 
-.bannerContainer img {
-  float: left;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.image1 {
+  background-image: url("../images/girl1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 24px 32px 32px rgba(5, 9, 42, 0.24);
+  height: 150px;
+  width: 20%;
+  height: 330px;
+
+}
+
+
+.image2 {
+  background-image: url("../images/girl2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 24px 32px 32px rgba(5, 9, 42, 0.24);
+  height: 150px;
+  width: 20%;
+  height: 330px;
+
+}
+
+.image3 {
+  background-image: url("../images/girl3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 24px 32px 32px rgba(5, 9, 42, 0.24);
+  height: 150px;
+  width: 20%;
+  height: 330px;
+
+}
+
+.image4 {
+  background-image: url("../images/girl4.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 24px 32px 32px rgba(5, 9, 42, 0.24);
+  height: 150px;
+  width: 20%;
+  height: 330px;
+
+}
+
+.image5 {
+  background-image: url("../images/girl5.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 24px 32px 32px rgba(5, 9, 42, 0.24);
+  height: 150px;
+  width: 20%;
+  height: 330px;
+
 }
 
 .partners {
@@ -757,7 +832,6 @@ section {
   list-style: none;
   justify-content: center;
   flex-wrap: wrap;
-  border-bottom: 1px solid #DDDDDD;
 }
 
 @media (min-width: 768px) {
@@ -781,5 +855,33 @@ section {
   .partnerslist li {
     margin: 60px;
   }
+}
+
+.partnersbkg {
+  background-image: url("../images/bkg5.svg");
+}
+
+.herobkg {
+  position: relative;
+  background-image: url("../images/bkg9.svg");
+  background-repeat: no-repeat;
+}
+
+.splicingBkg {
+  position: absolute;
+  right: 5%;
+}
+
+.mutate{
+  position: absolute;
+  right: 0;
+  right: 84%;
+
+}
+
+.bottom-bubble{
+  position: absolute;
+  right: 20%;
+  bottom: -20%;
 }
 /*# sourceMappingURL=main.css.map */

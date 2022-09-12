@@ -311,8 +311,13 @@
   }
 
 .join-reasons{
-    position: relative;
-    margin-top: 50px;
+    display: none;
+
+    @media(min-width: $breakpoint-tablet){
+        position: relative;
+        margin-top: 50px;
+        display: block;
+    }
 }
 .option{
     width: 38px;
@@ -350,4 +355,20 @@
 }
 .displace-132{
     left: 135px;
+}
+
+.expectation-bkg{
+     
+    display: none;
+    @media(min-width: $breakpoint-tablet){
+       display: block;
+       position: absolute;
+    bottom: -112px;
+    }
+}
+
+.whybkg{
+    background-image: url(../images/bkg4.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }

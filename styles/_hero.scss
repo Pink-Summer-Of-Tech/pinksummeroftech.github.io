@@ -46,16 +46,16 @@
     width: 100%;
     //gap: 10px;
 
-    div{
-        // width: 20%;
-        // height: 200px;
+    .image1{
+        background-image: url("../images/girl1.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 24px 32px 32px rgba(5, 9, 42, 0.24);
+        height: 150px;
+        width: 20%;
+        height: 330px;
     }
-        img{
-            float: left;
-            width:  100%;
-            height: auto;
-            object-fit: cover;
-        }
+       
 }
 .partners{
     text-align: center;
@@ -77,7 +77,6 @@
     list-style:none;
     justify-content: center;
     flex-wrap: wrap;
-    border-bottom: 1px solid #DDDDDD;
     @media(min-width: $breakpoint-tablet){
         padding: 50px;
         padding-top: 0px;
@@ -98,4 +97,19 @@
         }
     }
 
+}
+
+.partnersbkg{
+    background-image: url("../images/bkg5.svg");
+}
+
+.herobkg{
+    position: relative;
+    background-image: url("../images/bkg9.svg");
+    background-repeat: no-repeat;
+
+}
+
+.splicingBkg{
+    position: relative;
 }
